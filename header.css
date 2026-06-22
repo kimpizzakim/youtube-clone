@@ -11,6 +11,7 @@
     border-bottom-width:1px;
     border-bottom-style:solid;
     border-bottom-color:rgb(240,240,240);
+    z-index:100;
 }
 
 .left-section{
@@ -65,6 +66,26 @@
     margin-left:-1px;
     margin-right:10px;
     justify-content: center;
+    position:relative;
+
+}
+
+.search-button .tooltip{
+    position:absolute;
+    background-color:gray;
+    color:white;
+    padding: 4px 8px 4px 8px;
+    border-radius:2px;
+    font-size:12px;
+    bottom:-30px;
+    opacity:0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+
+}
+
+.search-button:hover .tooltip{
+    opacity:1;
 
 }
 
@@ -105,6 +126,24 @@
 
 .notifications-icon{
     height:24px;
+}
+
+.notification-icon-container{
+    position:relative;
+}
+.notification-count{
+    position:absolute;
+    top:-2px;
+    right:-5px;
+    background-color:rgb(200,0,0);
+    border-radius:10px;
+    color:white;
+    font-family:Roboto,Arial;
+    font-size:11px;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:2px;
+    padding-bottom:2px;
 }
 
 .current-user-pic{
